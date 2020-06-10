@@ -491,9 +491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 11400000, guid: e3da0eb3d719345d38830a896cbb36d3,
     type: 2}
-  m_MaxNumberOfMovingImages: 1
-  m_TrackedImagePrefab: {fileID: 5948567403443476942, guid: ba4d06602dc804dd380aedb25688f8a6,
-    type: 3}
+  m_MaxNumberOfMovingImages: 4
+  m_TrackedImagePrefab: {fileID: 0}
 --- !u!1 &1875185601
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,7 +510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1875185602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,11 +525,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ImageManager: {fileID: 1335839540}
   m_ImageLibrary: {fileID: 11400000, guid: e3da0eb3d719345d38830a896cbb36d3, type: 2}
-  m_StagePrefab: {fileID: 5948567403443476942, guid: ba4d06602dc804dd380aedb25688f8a6,
+  m_ChamomileStagePrefab: {fileID: 8090832071642762086, guid: 32e48b038e6a842a793d89a424a76849,
     type: 3}
-  m_OnePrefab: {fileID: 6562802905340916462, guid: fb4f5727663de409fa10d3d74e40bddf,
+  m_EarlGreyStagePrefab: {fileID: 2345049755135113710, guid: 6ddaebe61659a46879dc6850388a4231,
     type: 3}
-  m_TwoPrefab: {fileID: 8763548994477902960, guid: ed9684a662519482891fb22cad305d3c,
+  m_PeppermintStagePrefab: {fileID: 5357156552681997127, guid: 57d35fbc229814fa885d6319cb40c424,
     type: 3}
 --- !u!4 &1875185603
 Transform:
