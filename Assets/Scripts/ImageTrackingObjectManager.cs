@@ -161,13 +161,12 @@ public class ImageTrackingObjectManager : MonoBehaviour
             {
                 if (image.referenceImage.guid == s_ChamomileMarkerGUID)
                 {
-                    Debug.Log("Tracking State Test >>>>> Enable Chamomile");
                     // 그래픽 그리기
                     m_ChamomileStagePrefabManager.EnablePrefab(true);
 
                     // 이미지 위치에 항상 stage가 그려지도록 위치, 각도 업데이트
                     Vector3 markerPosition = image.transform.position;
-                    Vector3 targetPosition = new Vector3(markerPosition.x + 0.02f, markerPosition.y, markerPosition.z - 0.012f);
+                    Vector3 targetPosition = new Vector3(markerPosition.x - 0.004f, markerPosition.y, markerPosition.z - 0.030f);
                     m_SpawnedChamomileStagePrefab.transform.SetPositionAndRotation(targetPosition, image.transform.rotation);
                 }
                 else if (image.referenceImage.guid == s_EarlGreyMarkerGUID)
@@ -176,7 +175,9 @@ public class ImageTrackingObjectManager : MonoBehaviour
                     m_EarlGreyStagePrefabManager.EnablePrefab(true);
 
                     // 이미지 위치에 항상 stage가 그려지도록 위치, 각도 업데이트
-                    m_SpawnedEarlGreyStagePrefab.transform.SetPositionAndRotation(image.transform.position, image.transform.rotation);
+                    Vector3 markerPosition = image.transform.position;
+                    Vector3 targetPosition = new Vector3(markerPosition.x, markerPosition.y, markerPosition.z - 0.035f);
+                    m_SpawnedPeppermintStagePrefab.transform.SetPositionAndRotation(targetPosition, image.transform.rotation);
                 }
                 else if (image.referenceImage.guid == s_PeppermintMarkerGUID)
                 {
@@ -184,27 +185,11 @@ public class ImageTrackingObjectManager : MonoBehaviour
                     m_PeppermintStagePrefabManager.EnablePrefab(true);
 
                     // 이미지 위치에 항상 stage가 그려지도록 위치, 각도 업데이트
-                    m_SpawnedPeppermintStagePrefab.transform.SetPositionAndRotation(image.transform.position, image.transform.rotation);
+                    Vector3 markerPosition = image.transform.position;
+                    Vector3 targetPosition = new Vector3(markerPosition.x + 0.001f, markerPosition.y, markerPosition.z - 0.035f);
+                    m_SpawnedPeppermintStagePrefab.transform.SetPositionAndRotation(targetPosition, image.transform.rotation);
+                    m_SpawnedPeppermintStagePrefab.transform.Rotate(Vector3.up, 90.0f);
                 }
-            }
-            // image is no longer tracking, disable visuals TrackingState.Limited TrackingState.None
-            // 이미지 트래킹 상태가 아니면,
-            else
-            {
-                if (image.referenceImage.guid == s_ChamomileMarkerGUID)
-                {
-                    Debug.Log("Tracking State Test >>>>> Disable Chamomile");
-                    m_ChamomileStagePrefabManager.EnablePrefab(false);
-                }
-                else if (image.referenceImage.guid == s_EarlGreyMarkerGUID)
-                {
-                    m_EarlGreyStagePrefabManager.EnablePrefab(false);
-                }
-                else if (image.referenceImage.guid == s_PeppermintMarkerGUID)
-                {
-                    m_PeppermintStagePrefabManager.EnablePrefab(false);
-                }
-
             }
         }
         
@@ -214,7 +199,6 @@ public class ImageTrackingObjectManager : MonoBehaviour
         {
             if (image.referenceImage.guid == s_ChamomileMarkerGUID)
             {
-                Debug.Log("Tracking State Test >>>>> Destroy Chamomile");
                 Destroy(m_SpawnedChamomileStagePrefab);
             }
             else if (image.referenceImage.guid == s_EarlGreyMarkerGUID)
