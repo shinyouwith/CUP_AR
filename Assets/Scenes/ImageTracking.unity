@@ -503,7 +503,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1875185603}
   - component: {fileID: 1875185602}
-  - component: {fileID: 1875185604}
   m_Layer: 0
   m_Name: ObjectManager
   m_TagString: Untagged
@@ -525,11 +524,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ImageManager: {fileID: 1335839540}
   m_ImageLibrary: {fileID: 11400000, guid: e3da0eb3d719345d38830a896cbb36d3, type: 2}
-  m_ChamomileStagePrefab: {fileID: 8090832071642762086, guid: 32e48b038e6a842a793d89a424a76849,
+  m_ChamomileStagePrefab: {fileID: 1054775187893614306, guid: ae884af0aaa464f8b8a9a41214052d5c,
     type: 3}
-  m_EarlGreyStagePrefab: {fileID: 2345049755135113710, guid: 6ddaebe61659a46879dc6850388a4231,
+  m_EarlGreyStagePrefab: {fileID: 4549301022956730863, guid: 60f7d41b3a6f541ff91a192d8e213acb,
     type: 3}
-  m_PeppermintStagePrefab: {fileID: 5357156552681997127, guid: 57d35fbc229814fa885d6319cb40c424,
+  m_PeppermintStagePrefab: {fileID: 5908833572591698883, guid: 7715b474a45544a44869f6815850a47b,
     type: 3}
 --- !u!4 &1875185603
 Transform:
@@ -545,21 +544,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1875185604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875185601}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06281558d0b1645d7b7d760805b55c77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ImageTrackingObjectManager: {fileID: 1875185602}
-  m_SumPrefab: {fileID: 7656749359858268736, guid: 45ae871e18cb54353b232c955da9fdca,
-    type: 3}
 --- !u!1 &2146458540
 GameObject:
   m_ObjectHideFlags: 0
