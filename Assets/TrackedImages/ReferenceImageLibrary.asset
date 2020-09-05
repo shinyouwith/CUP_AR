@@ -19,8 +19,8 @@ MonoBehaviour:
       m_GuidLow: 5041020551267830930
       m_GuidHigh: 2328001558063322793
     m_SerializedTextureGuid:
-      m_GuidLow: 15330781708268454720
-      m_GuidHigh: 4337242657140329273
+      m_GuidLow: 13008296664035776746
+      m_GuidHigh: 15146615723298177961
     m_Size: {x: 0.025, y: 0.025}
     m_SpecifySize: 1
     m_Name: chamomile_marker
@@ -29,8 +29,8 @@ MonoBehaviour:
       m_GuidLow: 4766082766488518605
       m_GuidHigh: 17289295153920666267
     m_SerializedTextureGuid:
-      m_GuidLow: 3755319744139435686
-      m_GuidHigh: 5738026647631815130
+      m_GuidLow: 15285650616259216339
+      m_GuidHigh: 2977939831313952266
     m_Size: {x: 0.025, y: 0.025}
     m_SpecifySize: 1
     m_Name: earlgrey_marker
@@ -39,8 +39,8 @@ MonoBehaviour:
       m_GuidLow: 5749586147689767950
       m_GuidHigh: 3587969176984394381
     m_SerializedTextureGuid:
-      m_GuidLow: 15318484053362716129
-      m_GuidHigh: 17096108256518173930
+      m_GuidLow: 6083559293738878415
+      m_GuidHigh: 14312547674773407850
     m_Size: {x: 0.025, y: 0.025}
     m_SpecifySize: 1
     m_Name: peppermint_marker
